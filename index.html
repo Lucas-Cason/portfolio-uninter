@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfólio</title>
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <!-- Header com os links internos -->
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#about-me">Sobre Mim</a></li>
+            <li><a href="#academic">Formação Educacional</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Section Sobre Mim -->
+   <section id="about-me">
+      <h1>Sobre Mim</h1>
+      <div class="about-me-content">
+         <img src="images/me.JPEG" alt="Minha Foto" class="about-me-photo">
+         <p>
+            Olá, meu nome é <strong>Lucas Eduardo Cason</strong> e sou um desenvolvedor. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Uninter e trabalho como estagiário em desenvolvimento de sofyware na Schott Pharma Brasil  .
+         </p>
+      </div>
+   </section>
+
+   <!-- Section Formação Educacional -->
+   <section id="academic">
+      <h1>Formação Educacional</h1>
+      <ul>
+         <li>Ensino médio + Técnico em Informática (Escola Professor Luiz Rosa) -> Completo</li>
+         <li>Ciência da Computação (Faculdade UniAnchieta) -> Incompleto (2 anos)</li>
+         <li>Análise e Desenvolvimento de Sistemas (Uninter) -> Cursando</li>
+      </ul>
+   </section>
+
+   <!-- Section Portfólio -->
+   <section id="portfolio">
+      <h1>Portfólio</h1>
+      <p class="portfolio-link">Link para o Portfólio:</p>
+      <a href="https://github.com/Lucas-Cason">
+         <img src="images/githubLogo.svg" alt="github/Lucas-Cason" class="projects-image">
+      </a>
+   </section>
+
+   <!-- Section Contato -->
+    <section id="contact">
+      <h1>Contato</h1>
+      <p>Entre em contato preencgendo o gormulário abaixo:</p>
+      
+      <form action="#" method="post" class="form-contact">
+         <!-- Campo nome -->
+         <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+         </div>
+         <!-- Campo e-mail -->
+         <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+         </div>
+         <!-- Campo mensagem -->
+         <div>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+         </div>
+
+         <!-- Botão de envio -->
+         <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
